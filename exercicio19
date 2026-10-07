@@ -1,0 +1,9 @@
+triangulo = input("digite os valores dos  lados de um triangulo na sequência A, B e C: ")
+lado_A =int(input("digite o valor do lado A: "))
+lado_B =int(input("digite o valor do lado B: "))
+lado_C =int(input("digite o valor do lado C: "))
+if lado_A == lado_B and lado_B == lado_C:
+    print("O triangulo é equilátero")
+elif lado_A == lado_B or lado_B == lado_C or lado_A == lado_C:
+    print("O triangulo é isósceles")
+else:print("O triangulo é escaleno")

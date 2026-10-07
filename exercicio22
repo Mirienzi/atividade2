@@ -1,0 +1,4 @@
+produto = int(input("digite o preço do produto: "))
+valor_desconto = produto * 0.10
+valor_final = produto - valor_desconto
+print(f"O valor do produto é: R$ {valor_final:.2f}")

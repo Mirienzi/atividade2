@@ -1,0 +1,22 @@
+valor_hora = float(input("Digite o valor da hora trabalhada: "))
+horas_trabalhadas = float(input("Digite o número de horas trabalhadas no mês: "))
+salario_bruto = valor_hora * horas_trabalhadas
+FGTS = salario_bruto * 0.11
+novo_salario = salario_bruto - FGTS
+
+if salario_bruto <= 1500:
+    desconto_ir = salario_bruto * 0.05
+    novo_salario = salario_bruto - desconto_ir
+    percentual = 5
+elif salario_bruto <= 2500:
+    desconto_inss = salario_bruto * 0.10
+    novo_salario = salario_bruto - desconto_inss
+    percentual = 10
+else: salario_bruto > 2500
+desconto_20 = salario_bruto * 0.20
+novo_salario = salario_bruto - desconto_20
+percentual = 20 
+print(f"O salário bruto é: R$ {salario_bruto:.2f}")
+print(f"O FGTS é: R$ {FGTS:.2f}")
+print(f"O salário líquido é: R$ {novo_salario:.2f}")
+print(f"o ir é: R$ {desconto_ir:.2f}")

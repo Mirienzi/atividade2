@@ -1,0 +1,5 @@
+salario_fixo = float(input("Digite o salário fixo do funcionário: "))
+vendas = float(input("Digite o valor total das vendas do funcionário: "))
+comissao = vendas * 0.04
+salario_total = salario_fixo + comissao
+print(f"O salário total do funcionário é: R$ {salario_total:.2f}")
